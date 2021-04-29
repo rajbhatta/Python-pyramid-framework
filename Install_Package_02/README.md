@@ -21,3 +21,6 @@ package/bin/pip install install -e .
 <img src="images/img3.png"/>
 
 Note: we saw that we are having error at this stage during the installation
+<img src="images/img4.png"/>
+
+# How to solve installation issue to run the project? #
