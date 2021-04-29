@@ -26,5 +26,5 @@ Note: we saw that we are having error at this stage during the installation
 # How to solve installation issue to run the project? #
 ### If we can't run package/bin/pip install -e . then we won't get pserve file inside virtual environment bin folder ####
 - <b> Thus remove dependencies causing error, in this case psycopg2 and run package/bin/pip install -e . then generate pserve file </b>
-- Once you do have pserve file, add the dependency for psycopg2 by using package/bin/pip install psycopg2-binary
-- run the project using package/bin/pserve development.ini
+- Once you do have pserve file, add the dependency for psycopg2 inside setup.py and run command by using package/bin/pip install psycopg2-binary
+- At this stage you will be able to run the project using package/bin/pserve development.ini
