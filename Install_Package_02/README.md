@@ -1,3 +1,3 @@
 # 1. Output of Pyramid #
-<img src="img/img1.png"/>
+<img src="images/img1.png"/>
 
