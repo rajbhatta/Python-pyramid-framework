@@ -37,3 +37,10 @@ Getting Started
 <img src="img/img3.png"/>
 
 Note: don't activate virtual environment during debugging, locate virtual environment from IDE virtual
+
+# Steps #
+<img src="img/img4.png"/>
+<img src="img/img5.png"/>
+<img src="img/img6.png"/>
+<img src="img/img7.png"/>
+<ul><li> Invalidate cache and restart the IDE </li></ul>
