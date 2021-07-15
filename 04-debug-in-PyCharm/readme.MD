@@ -30,6 +30,8 @@ Getting Started
     env/bin/pserve development.ini
 
 # Tips for debugging python application in Pyramid #
+- Create virtual environment, activate and install all the dependencies
+- Don't activate it using command, locate it using PyCharm or Visual Studio IDE interpreter
 <img src="img/img1.png"/>
 <img src="img/img2.png"/>
 <img src="img/img3.png"/>
