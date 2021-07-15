@@ -1,5 +1,6 @@
 # How to solve debugging issue for pyramid application with below listed configuration ? #
 
+## Create launch.json from python extension ##
 ```js
 
 1. launch.json
@@ -47,7 +48,7 @@
 
 ```
 
-## Error Screen ##
+## When you encountered error as shown in screen ##
 <img src="img/img1.png"/>
 
 ## Solution ##
