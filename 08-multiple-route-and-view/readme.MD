@@ -23,7 +23,8 @@ def hello_name(request):
 if __name__ == '__main__':
     config=Configurator()
     config.include('pyramid_jinja2')
-    config.add_route('hello_world','/')
+    config.add_route('hello','/')
+    config.add_route('home_page', '/')
     config.scan()
     app=config.make_wsgi_app()
     server=make_server('0.0.0.0',6543,app)
