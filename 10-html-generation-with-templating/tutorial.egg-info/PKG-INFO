@@ -1,10 +1,11 @@
 Metadata-Version: 2.1
-Name: mysite
+Name: tutorial
 Version: 0.0.0
 Summary: UNKNOWN
 Home-page: UNKNOWN
 License: UNKNOWN
 Platform: UNKNOWN
+Provides-Extra: dev
 
 UNKNOWN
 
