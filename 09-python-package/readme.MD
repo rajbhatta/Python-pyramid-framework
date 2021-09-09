@@ -5,47 +5,50 @@
 from setuptools import  setup
 requires =[
     'pyramid',
-    'pyramid_jinja2'
+    'pyramid_jinja2',
+    'waitress'
 ]
-setup(name='mysite',
+setup(name='tutorial',
       install_requires=requires,
-      entry_points="""\
-        [paste.app_factory]
-        main = mysite:main
-        """)
+      entry_points={
+          'paste.app_factory': [
+              'main = tutorial:main'
+          ],
+      })
 ```
 
 ### 2. development.ini ###
 ```python
 [app:main]
-use=egg:mysite
+use = egg:tutorial
 
 [server:main]
-use=egg:pyramid#wsgiref
-host=0.0.0.0
-port=6543
+use = egg:waitress#main
+listen = localhost:6543
 ```
 
-### 3. __init__.py ###
+### 3. tutorial/__init__.py ###
 ```python
 from pyramid.config import Configurator
-from pyramid.view import view_config
+from pyramid.response import Response
 
 
-@view_config(route_name='list', renderer ='list.jinja2')
-def list(request):
-    return dict()
+def hello_world(request):
+    return Response('<body><h1>Hello World!</h1></body>')
+
 
 def main(global_config, **settings):
-    config=Configurator(settings=settings)
-    config.include('pyramid_jinja2')
-    config.add_route('list','/')
-    config.scan()
+    config = Configurator(settings=settings)
+    config.add_route('hello', '/')
+    config.add_view(hello_world, route_name='hello')
     return config.make_wsgi_app()
 
 ```
 
-### 4. list.jinja2 ###
-```html
-<h4>There is nothing here </h4>
+### Running the app ###
+```python
+pip install -e .
+pserve development.ini
 ```
+
+<b> Note: when starting monitor for PID ..... is appeared on IDE, type and call</b> http://localhost:6543/
