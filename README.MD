@@ -8,7 +8,7 @@
 7. <a href="07-templating/readme.MD">07-templating</a>
 8. <a href="08-multiple-route-and-view/readme.MD">08-multiple-route-and-view</a>
 9. <a href="09-python-package/readme.MD">09-python-package</a>
-10.<a href="10-html-generation-with-templating/readme.MD">10-html-generation-with-templating</a>
-11.<a href="11-view-class/readme.MD">11-view-class</a>
-12<a href="12-dispatching-view-with-routing/readme.MD">12-dispatching-view-with-routing</a>
-13.<a href="13-crud-using-view-class/readme.MD">13-crud-using-view-class</a>
+10. <a href="10-html-generation-with-templating/readme.MD">10-html-generation-with-templating</a>
+11. <a href="11-view-class/readme.MD">11-view-class</a>
+12. <a href="12-dispatching-view-with-routing/readme.MD">12-dispatching-view-with-routing</a>
+13. <a href="13-crud-using-view-class/readme.MD">13-crud-using-view-class</a>
