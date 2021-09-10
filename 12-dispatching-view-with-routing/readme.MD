@@ -86,7 +86,7 @@ class TutorialViews:
         }
 ```
 
-### Running the app ###
+### 6. Running the app ###
 ```python
 pip install -e .
 pserve development.ini
@@ -94,5 +94,5 @@ pserve development.ini
 
 <b> Note: when starting monitor for PID ..... is appeared on IDE, type and call</b> http://localhost:6543/
 
-### Reference ###
+### 7. Reference ###
 - https://docs.pylonsproject.org/projects/pyramid/en/latest/quick_tutorial/routing.html
